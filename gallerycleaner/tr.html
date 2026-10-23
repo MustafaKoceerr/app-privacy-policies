@@ -42,11 +42,11 @@
     bilginize erişmez.</p>
 
   <h2>2. Cihaz üzerinde işleme</h2>
-  <p>Tüm analiz (benzer kareleri ve bulanık, karanlık, ekran görüntüsü gibi büyük olasılıkla gereksiz
-    fotoğrafları bulma) tamamen cihazınızda, uygulamayla birlikte gelen makine öğrenmesi modelleriyle
-    yapılır. Videoların içeriği analiz edilmez; yalnızca süresi, çok kısa ve büyük olasılıkla yanlışlıkla
-    çekilmiş kayıtları önermek için kullanılır. Hiçbir fotoğraf, video, küçük resim veya analiz sonucu
-    bir yere yüklenmez. Uygulama internet izni istemez, bu nedenle cihazınızdan veri gönderemez.</p>
+  <p>Tüm analiz (benzer kareleri ve bulanık, karanlık, ekran görüntüsü, çok kısa video gibi büyük
+    olasılıkla gereksiz fotoğraf veya videoları bulma) tamamen cihazınızda, uygulamayla birlikte
+    gelen makine öğrenmesi modelleriyle yapılır. Hiçbir fotoğraf, video, küçük resim veya analiz
+    sonucu bir yere yüklenmez. Uygulama internet izni istemez, bu nedenle cihazınızdan veri
+    gönderemez.</p>
 
   <h2>3. Cihazınızda saklanan veriler</h2>
   <p>Uygulama, cihazınızdaki kendi özel depolama alanında şu verileri tutar:</p>
@@ -55,7 +55,9 @@
       dosya boyutu, klasör, medya türü ve video süresi),</li>
     <li>kararlarınız (sakla, sil, sonra),</li>
     <li>analiz sonuçları (sayısal görüntü özellikleri ve benzer fotoğraf grupları),</li>
-    <li>tema ve dil dahil ayarlarınız.</li>
+    <li>tema ve dil dahil ayarlarınız,</li>
+    <li>uygulama çökerse, bir sonraki açılışta isteğe bağlı olarak bildirebilmeniz için cihazda
+      tutulan tek bir yerel çökme kaydı (dosya yolları ve medya dosya adları gizlenmiş olarak).</li>
   </ul>
   <p>Bu veriler yalnızca uygulamanın özelliklerini sunmak için kullanılır. Uygulamayı kaldırmak veya
     depolama alanını temizlemek hepsini siler.</p>
@@ -71,11 +73,14 @@
     yedekleyebilir. Bu işlemi biz değil Android ve Google yürütür; bu yedeğe erişimimiz yoktur.
     Fotoğraflarınız, kararlarınız ve analiz sonuçlarınız bu yedeğe dahil edilmez.</p>
 
-  <h2>6. Veri paylaşımı ve üçüncü taraflar</h2>
+  <h2>6. Veri paylaşımı, çökme raporları ve üçüncü taraflar</h2>
   <p>Hiçbir veri toplamadığımız için üçüncü taraflarla da veri paylaşmayız veya satmayız. Uygulamada
-    reklam, analitik veya takip yoktur. Uygulama bir çökme raporlama kütüphanesi (Firebase Crashlytics)
-    içerir, ancak internet erişimi olmadığından cihazınızdan çökme raporu veya başka bir veri
-    gönderilmez.</p>
+    reklam, analitik, takip veya üçüncü taraf çökme raporlama SDK'sı yoktur. Uygulama çökerse
+    cihazınıza bir çökme raporu (uygulama sürümü, Android sürümü, cihaz modeli, yığın izi ve son
+    uyarı/hata günlük satırları; dosya yolları ve medya dosya adları temizlenmiş olarak) kaydeder ve
+    bir sonraki açılışta göndermek isteyip istemediğinizi sorar. Göndermeyi seçerseniz e-posta
+    uygulamanız rapor hazır doldurulmuş olarak açılır; göndermeden önce içeriği inceleyebilir,
+    düzenleyebilir veya iptal edebilirsiniz.</p>
 
   <h2>7. Çocuklar</h2>
   <p>Uygulama çocuklara yönelik değildir ve 13 yaş altındaki çocuklar dahil hiç kimseden bilerek veri

@@ -40,12 +40,11 @@
     personal information.</p>
 
   <h2>2. On-device processing</h2>
-  <p>All analysis (finding similar shots and photos that are blurry, dark, screenshots or otherwise
-    likely junk) runs entirely on your device, using machine-learning models that are bundled with
-    the app. Video content is not analyzed; only a video's length is used to suggest very short,
-    likely accidental recordings. No photo, video, thumbnail or analysis result is uploaded
-    anywhere. The app does not request the internet permission, so it cannot send data off your
-    device.</p>
+  <p>All analysis (finding similar shots and photos or videos that are blurry, dark, screenshots,
+    very short recordings or otherwise likely junk) runs entirely on your device, using
+    machine-learning models that are bundled with the app. No photo, video, thumbnail or analysis
+    result is uploaded anywhere. The app does not request the internet permission, so it cannot send
+    data off your device.</p>
 
   <h2>3. Data stored on your device</h2>
   <p>The app keeps the following data in its private storage on your device:</p>
@@ -54,7 +53,9 @@
       dimensions, file size, folder, media type and video length),</li>
     <li>your decisions (keep, delete, later),</li>
     <li>analysis results (numerical image features and groups of similar photos),</li>
-    <li>your settings, including theme and language.</li>
+    <li>your settings, including theme and language,</li>
+    <li>if the app crashes, a single local crash log (file paths and media filenames redacted) so
+      you can optionally report it on the next launch.</li>
   </ul>
   <p>This data is only used to provide the app's features. Uninstalling the app or clearing its
     storage removes all of it.</p>
@@ -70,11 +71,13 @@
     This is handled by Android and Google, not by us, and we cannot access it. Your photos, decisions
     and analysis results are not included in this backup.</p>
 
-  <h2>6. Data sharing and third parties</h2>
+  <h2>6. Data sharing, crash reports and third parties</h2>
   <p>We do not collect any data, so we do not share or sell any data with third parties. The app
-    contains no advertising, analytics or tracking. It includes a crash-reporting library (Firebase
-    Crashlytics), but because the app has no internet access, no crash reports or other data are
-    sent from your device.</p>
+    contains no advertising, analytics, tracking or third-party crash-reporting SDKs. If the app
+    crashes, it saves a crash report on your device (app version, Android version, device model,
+    stack trace and recent warning/error log lines, with file paths and media filenames removed) and
+    asks on the next launch whether you want to send it. Choosing to send opens your email app with
+    the report pre-filled so you can review, edit or cancel it before sending.</p>
 
   <h2>7. Children</h2>
   <p>The app is not directed at children and does not knowingly collect data from anyone, including
